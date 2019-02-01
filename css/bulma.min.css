@@ -4527,7 +4527,7 @@ a.tag:hover {
  margin-top:-.75rem
 }
 .title:not(.is-spaced)+.subtitle {
- margin-top:-1.25rem;
+ margin-top:-2.25rem;
  padding-top: 0%;
 }
 .title.is-1 {
