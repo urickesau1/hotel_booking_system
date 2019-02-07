@@ -10,9 +10,9 @@
     <script src="js/jquery.min.js"></script>
 
     <script>
-        $("document").ready(function() {
-            $("#fade-in").on("click", function(){
-                $("#textBox").fadeIn(3000, function(){
+       $("document").ready(function() {
+            $("#hotel1").on("click", function(){
+                $("#reviewF").fadeIn(3000, function(){
                     
                 });
             }); 
@@ -21,6 +21,32 @@
 
         });
     </script>
+    <script>
+       $("document").ready(function() {
+            $("#hotel2").on("click", function(){
+                $("#reviewT").fadeIn(3000, function(){
+                    
+                });
+            }); 
+
+
+
+        });
+    </script>
+    <script>
+       $("document").ready(function() {
+            $("#hotel3").on("click", function(){
+                $("#reviewS").fadeIn(3000, function(){
+                    
+                });
+            }); 
+
+
+
+        });
+    </script>
+            
+    
 
     <style>
     
@@ -100,7 +126,14 @@
         display: none;
     }
 
-    #textBox {
+    #reviewF {
+            display: none;
+        }
+
+        #reviewT {
+            display: none;
+        }
+        #reviewS {
             display: none;
         }
 
@@ -242,9 +275,9 @@
            <form action="" method="post">
                 <select name="hotels" id="hotels" action="index.php">
                     <option value="blank" method="post" class="img">Select your hotel</option>
-                    <option value="hotel1" method="post" class="img">Four Seasons Hotel</option>
-                    <option value="hotel2" method="post" class="img">Royal Tulip</option>
-                    <option value="hotel3" method="post" class="img">Sun1 Parow</option>
+                    <option value="hotel1" method="post" class="img" id="hotel1">Four Seasons Hotel</option>
+                    <option value="hotel2" method="post" class="img" id="hotel2">Royal Tulip</option>
+                    <option value="hotel3" method="post" class="img" id="hotel3">Sun1 Parow</option>
                 </select>
                 <br>
                 <br>
@@ -282,10 +315,37 @@
             
         </div>
         <div class="column">
-            <a href="#jump" id="fade-in">Fade in</a>
-            <div id="textBox">
+           
+            <div id="reviewF">
                 </p> <span id=jump> Four Seasons Hotel</span> <img src="img/tyrone.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
                     The Four Seasons hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
+                
+                </p>
+                <br>
+                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/taariq.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                    The Four Seasons hotel has the best vetkoeks. They even add extra mince for free!!!
+                
+                </p>
+            </div>
+            <div id="reviewT">
+                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/natheer.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                    The Four Seasons hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
+                
+                </p>
+                <br>
+                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/jessie.jpeg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                    The Four Seasons hotel has the best vetkoeks. They even add extra mince for free!!!
+                
+                </p>
+            </div>
+            <div id="reviewS">
+                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/marlon.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                    The Four Seasons hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
+                
+                </p>
+                <br>
+                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/evan.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                    The Four Seasons hotel has the best vetkoeks. They even add extra mince for free!!!
                 
                 </p>
             </div>
