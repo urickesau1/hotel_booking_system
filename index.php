@@ -328,24 +328,24 @@
                 </p>
             </div>
             <div id="reviewT">
-                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/natheer.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
-                    The Four Seasons hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
+                </p> <span id=jump> Royal Tulip Hotel</span> <img src="img/natheer.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                    The Royal Tulip hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
                 
                 </p>
                 <br>
-                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/jessie.jpeg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
-                    The Four Seasons hotel has the best vetkoeks. They even add extra mince for free!!!
+                </p> <span id=jump> Royal Tulip Hotel</span> <img src="img/taufeeq.jpeg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                    The Royal Tulip hotel has the best vetkoeks. They even add extra mince for free!!!
                 
                 </p>
             </div>
             <div id="reviewS">
-                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/marlon.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
-                    The Four Seasons hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
+                </p> <span id=jump> Sun1 Hotel Parow</span> <img src="img/marlon.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                    The Sun1 hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
                 
                 </p>
                 <br>
-                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/evan.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
-                    The Four Seasons hotel has the best vetkoeks. They even add extra mince for free!!!
+                </p> <span id=jump> Sun1 Hotel Parow</span> <img src="img/evan.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                    The Sun1 hotel has the best vetkoeks. They even add extra mince for free!!!
                 
                 </p>
             </div>
