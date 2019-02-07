@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TEST HOTEL BOOKING</title>
+    <title>HOTEL BOOKING</title>
     <link rel="stylesheet" href="bulma/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alice|Bad+Script|Charm|Cinzel:700|Courgette|Dancing+Script:700|Kaushan+Script|Lobster|Merienda|Playfair+Display+SC:400i|Tangerine:700|Roboto+Condensed:400i|" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
@@ -207,7 +207,7 @@
     <section class="hero is-fullheight">
         <div class="hero-body">
             <div class="container">
-                    <h1 class="title is-1 has-text-grey-dark has-text-centered" id="hotel-name">HOTEL? TRIVAGO</h1>
+                    <h1 class="title is-1 has-text-grey-dark has-text-centered" id="hotel-name">URICK ESAU</h1>
                     <h2 class="subtitle is-2 has-text-centered is-italic" id="slogan">Welcome Home</h2>
                     <h1 class="title is-1 is-italic">
                            <!-- HOTEL TRIVAGO-->
@@ -291,15 +291,17 @@
 
 
                 <br>
-                <h2 class="subtitle is-3 has-text-black" id="quickdays">How many days are you staying over?</h2>
-                <input type="number" name="days" id="days">
+                <h2 class="subtitle is-3 has-text-black" id="quickdays">Check In</h2>
+                <input type="date" name="days" id="days">
                 <br>
+                <h2 class="subtitle is-3 has-text-black" id="quickdays">Check Out</h2>
+                <input type="date" name="days" id="days">
                 <br>
                 <h2 class="subtitle is-3 has-text-black" id="quickdays"> Your Total:</h2>
                 <br>
                 <tr>
                     <td>
-                        R300
+                        
                     </td>
                 </tr>
                 
@@ -322,7 +324,7 @@
                 
                 </p>
                 <br>
-                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/taariq.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/taufeeq.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
                     The Four Seasons hotel has the best vetkoeks. They even add extra mince for free!!!
                 
                 </p>
@@ -333,7 +335,7 @@
                 
                 </p>
                 <br>
-                </p> <span id=jump> Royal Tulip Hotel</span> <img src="img/taufeeq.jpeg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                </p> <span id=jump> Royal Tulip Hotel</span> <img src="img/reagan.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
                     The Royal Tulip hotel has the best vetkoeks. They even add extra mince for free!!!
                 
                 </p>
