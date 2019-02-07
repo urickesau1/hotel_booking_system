@@ -13,7 +13,7 @@
         $("document").ready(function() {
             $("#fade-in").on("click", function(){
                 $("#textBox").fadeIn(3000, function(){
-                    alert("I'm done fading");
+                    
                 });
             }); 
 
@@ -284,7 +284,8 @@
         <div class="column">
             <a href="#jump" id="fade-in">Fade in</a>
             <div id="textBox">
-                </p> <span id=jump> lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. Non accusamus, nihil amet dignissimos minus voluptatem eligendi ea consectetur, quod officiis, nostrum magni. Corrupti repellendus maxime, nemo unde possimus iure debitis.
+                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/tyrone.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                    The Four Seasons hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
                 
                 </p>
             </div>
