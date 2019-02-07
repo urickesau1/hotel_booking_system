@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TEST HOTEL BOOKING</title>
     <link rel="stylesheet" href="bulma/bulma.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Alice|Bad+Script|Charm|Cinzel:700|Courgette|Dancing+Script:700|Kaushan+Script|Lobster|Merienda|Playfair+Display+SC:400i|Tangerine:700|Roboto+Condensed:400i|" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Alice|Bad+Script|Charm|Cinzel:700|Courgette|Dancing+Script:700|Kaushan+Script|Lobster|Merienda|Playfair+Display+SC:400i|Tangerine:700|Roboto+Condensed:400i|" rel="stylesheet">
     <style>
     
     .hero-body {
@@ -264,37 +264,7 @@
         </div>
         <div class="column">
 
-        <h2 class="title is-1 has-text-grey-dark" id="newstuff">WHAT'S NEW</h2>
-            <h3 class="is-1" id="activities">Scenic Views</h3>
-            <p class="is-italic">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit at sequi sunt saepe laudantium ullam, corporis, architecto voluptatem omnis veniam iste earum perferendis. Nobis officia suscipit fugiat commodi quasi.
-            </p>
-            <br>
-            <h3 class="is-1" id="activities">Swimming</h3>
-            <p class="is-italic">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit at sequi sunt saepe laudantium ullam, corporis, architecto voluptatem omnis veniam iste earum perferendis. Nobis officia suscipit fugiat commodi quasi.
-            </p>
-            <br>
-            <h3 class="is-1" id="activities">Wedding Venue</h3>
-            <p class="is-italic">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit at sequi sunt saepe laudantium ullam, corporis, architecto voluptatem omnis veniam iste earum perferendis. Nobis officia suscipit fugiat commodi quasi.
-            </p>
-            <br>
-            <h3 class="is-1" id="activities">Gift Shop</h3>
-            <p class="is-italic">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit at sequi sunt saepe laudantium ullam, corporis, architecto voluptatem omnis veniam iste earum perferendis. Nobis officia suscipit fugiat commodi quasi.
-            </p>
-            <br>
-            <h3 class="is-1" id="activities">Dining in or out</h3>
-            <p class="is-italic">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit at sequi sunt saepe laudantium ullam, corporis, architecto voluptatem omnis veniam iste earum perferendis. Nobis officia suscipit fugiat commodi quasi.
-            </p>
-            <br>
-            <h3 class="is-1" id="activities">Shuttle Service</h3>
-            <p class="is-italic">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit at sequi sunt saepe laudantium ullam, corporis, architecto voluptatem omnis veniam iste earum perferendis. Nobis officia suscipit fugiat commodi quasi.
-            </p>
-            <a href="#">See more</a>
+        
             
            
         </div>
