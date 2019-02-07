@@ -85,6 +85,10 @@
         display: none;
     }
 
+    #textBox {
+            display: none;
+        }
+
 
     
     
