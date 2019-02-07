@@ -215,7 +215,7 @@
             
                 
         </div>
-        <div class="column">
+        <div class="column has-background-grey-lighter">
         <h2 class="title is-1 has-text-grey-dark" id="quick">QUICK SEARCH</h2>
            <br>
            <h2 class="subtitle is-3 has-text-black" id="quickselect">Select your hotel by clicking the menu below:</h2>
@@ -315,7 +315,7 @@
             image = '<img src="img/four.jpg"></img> <br> <span class="tag is-danger is-medium">Daily rate (off season) R1200.00 per night</span>';
             break;
             case "hotel2":
-            image = '<img src="img/Royal-Tulip.png"></img> <br> <span class="tag is-danger is-medium">Daily rate (off season) R950.00 per night</span>';
+            image = '<img src="img/Royal-Tulip.png"></img> <br> <span class="tag is-warning is-medium">Daily rate (off season) R950.00 per night</span>';
             break;
             case "hotel3":
             image = '<img src="img/sun1.jpg"></img> <br> <span class="tag is-primary is-large">Daily rate (off season) R550.00 per night</span>';
