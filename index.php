@@ -300,7 +300,7 @@ if (isset($_GET['edit'])) {
         <div class="column has-background-grey-lighter">
         <h2 class="title is-1 has-text-grey-dark" id="quick">QUICK SEARCH</h2>
            <br>
-           <h2 class="subtitle is-3 has-text-black" id="quickselect">Select your hotel by clicking the menu below:</h2>
+           <h2 class="subtitle is-3 has-text-black" id="quickselect">Select your hotel by<u>  clicking </u>the menu below: </h2>
            <br>
            <form action="" method="post">
                 <select name="hotels" id="hotels" action="index.php">
