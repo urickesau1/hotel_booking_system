@@ -1,7 +1,7 @@
 <?php include('server.php'); 
 
-if (isset($_GET['edit'])) {
-    $id = $_GET['edit'];
+if (isset($_GET['check'])) {
+    $id = $_GET['check'];
 
     $rec = mysqli_query($db, "SELECT * FROM date_info WHERE id=$id");
     $edit_state = true;
@@ -9,9 +9,11 @@ if (isset($_GET['edit'])) {
     $date_in = $record['date_in'];
     $date_out = $record['date_out'];
     $id = $record['id'];
+    $totaldays = $date_in->diff($date_out);
 
 }
 
+$totaldays = $date_in->diff($date_out);
 
 ?>
 
@@ -343,6 +345,7 @@ if (isset($_GET['edit'])) {
         <div class="input-group">
             <label class="subtitle is-3 has-text-black" id="quickdays">Check-out Date</label>
             <input type="date"name="date_out" value="<?php echo $date_out; ?>">
+
         </div>
         <div class="input-group">
             <!--Here I defined my buttons to respond according to whether a user wants to update or save a task-->
@@ -353,6 +356,15 @@ if (isset($_GET['edit'])) {
         <br>
         <!------------------------------------------------------------------>
         <!------------------------------------------------------------------>
+
+
+        <!--Declaring my variables to calculate the price-->
+
+       
+
+
+        <!------------------------------------------------------------------>
+        <!------------------------------------------------------------------>
         
     <!--THIS IS THE TABLE WHICH DISPLAYS THE TASK INFORMATION ONCE IT HAS BEEN ENTERED AND SAVED-->
     <table class="table">
@@ -360,6 +372,7 @@ if (isset($_GET['edit'])) {
             <tr>
                 <th>Check-in date</th>
                 <th>Check-out date</th>
+                <th>Days</th>
                 <th colspan="2">Price</th>
             </tr>
         </thead>
@@ -369,6 +382,7 @@ if (isset($_GET['edit'])) {
             <tr>
                 <td><?php echo $row['date_in']; ?></td>
                 <td><?php echo $row['date_out']; ?></td>
+               <td><?php echo "difference " . $totaldays->days . " days "; ?></td> 
             </tr>
 
         <?php }?>
@@ -390,9 +404,13 @@ if (isset($_GET['edit'])) {
 
 
            <!------------------------------------------------------------------>
-           <button class="button is-link is-large" href="#">
+           <?php if ($edit_state == false): ?>
+           <button class="button is-link is-large" href="#" name="check">
                 Check availability
            </button>
+           <?php else:  ?>
+                <button type="submit" name="update" class="btn">Update</button>
+            <?php endif ?>
 
 
             
