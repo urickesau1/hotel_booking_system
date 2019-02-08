@@ -1,0 +1,122 @@
+
+/*These are my base styles for the main content of my webpage*/
+body {
+    font-size: 20px;
+    background-color: powderblue;
+
+}
+/*The styling of my heading/title of my webpage*/
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'VT323', monospace;
+    color: crimson;
+}
+
+/*This contains the styles for the actual table containing the data the user inserts*/
+table {
+    margin: 60px auto;
+    border-collapse: collapse;
+    text-align: left;
+    width: 45%;
+}
+
+/*Here I styled the headings of the table containing the data*/
+thead {
+    border: 3px solid darkslateblue;
+}
+
+/*I gave the row a red colour to make it stand out more*/
+tr {
+    border-bottom: 1px solid red;
+    /*! width: 0%; */
+}
+
+/*The styling for the placeholders and data entered, task name, description, due date*/
+th, td {
+    border: none;
+    height: 30px;
+    padding: 2px;
+    font-size: larger;
+    font-display: bold;
+    /*! width: 0px; */
+    font-family: 'Acme', sans-serif;
+}
+
+tr:hover {
+    background: grey;
+}
+
+form {
+    width: 45%;
+    margin: 50px auto;
+    text-align: left;
+    padding: 20px;
+    border: 6px solid #bbbbbb;
+    border-radius: 13px;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+/*The styling for the user's "Save" button*/
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: green;
+    border: none;
+    border-radius: 5px;
+}
+
+/*This is the styling for the message displayed whenever an action has been successfully performed*/
+.msg {
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    color: #3c763d;
+    background: #dff0d8;
+    border: 1px solid #3c763d;
+    width: 50%;
+    text-align: center;
+    
+}
+
+/*The styling for the user's "Edit" button*/
+.edit_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    background: goldenrod;
+    color: white;
+    border-radius: 3px;
+}
+
+/*Once the edit button is hovered over, it will change colour*/
+.edit_btn:hover {
+    box-shadow: 0px 0px 30px 0px #ff0505;
+}
+
+
+/*The styling for the user's "Delete" button*/
+.dlt_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    background: #800000;
+    border-radius: 3px;
+    color: white;
+}

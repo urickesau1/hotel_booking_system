@@ -1,3 +1,23 @@
+<?php include('server.php'); 
+
+if (isset($_GET['edit'])) {
+    $id = $_GET['edit'];
+
+    $rec = mysqli_query($db, "SELECT * FROM date_info WHERE id=$id");
+    $edit_state = true;
+    $record = mysqli_fetch_array($rec);
+    $date_in = $record['date_in'];
+    $date_out = $record['date_out'];
+    $id = $record['id'];
+
+}
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -137,6 +157,15 @@
             display: none;
         }
 
+        #bookdates {
+            width: 45%;
+            margin: 50px auto;
+            text-align: left;
+            padding: 20px;
+            border: 6px solid #bbbbbb;
+            border-radius: 13px;
+        }
+
 
     
     
@@ -241,7 +270,7 @@
             <h2 class="title is-1 has-text-grey-dark" id="reviews">CUSTOMER REVIEWS</h2>
             <div>
             <figure class="image is-128x128 is-centered">
-                <img src="img/urick.jpg">
+                <img src="img/john-paul.jpg">
             </figure>
             <br>
             <p class="is-italic" id="review-text">
@@ -307,8 +336,73 @@
                 
            </form>
            <br>
+           <br>
+           <!------------------------------------------------------------------>
+           <form method="post" action="server.php" class="bookdates">
+    <input type="hidden" name="id" value="<?php echo $id; ?>">
+        
+        <div class="input-group">
+            <label>Check-in Date</label>
+            <input type="date"name="date_in" value="<?php echo $date_in; ?>">
+        </div>
+        <div class="input-group">
+            <label>Check-out Date</label>
+            <input type="date"name="date_out" value="<?php echo $date_out; ?>">
+        </div>
+        <div class="input-group">
+            <!--Here I defined my buttons to respond according to whether a user wants to update or save a task-->
+            <?php if ($edit_state == false): ?>
+                <button type="submit" name="save" class="btn">Save</button>
+             <?php else:  ?>
+                <button type="submit" name="update" class="btn">Update</button>
+            <?php endif ?>
+        </div>
+    </form>
+        <br>
+        <br>
+        <!------------------------------------------------------------------>
+        <!------------------------------------------------------------------>
+        
+    <!--THIS IS THE TABLE WHICH DISPLAYS THE TASK INFORMATION ONCE IT HAS BEEN ENTERED AND SAVED-->
+    <table>
+        <thead>
+            <tr>
+                <th>Check-in date</th>
+                <th>Check-out date</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        <!--THE DATA IS FETCHED AND DISPLAYED VIA THE FETCH ARRAY FUNCTION. I CALLED THE DATA FROM THEIR ASSIGNED FIELDS IN THE DATABASE TO THEIR CORRESPONDING POSITION IN THE USER TABLE-->
+        <?php while($row = mysqli_fetch_array($results)) { ?>
+            <tr>
+                <td><?php echo $row['date_in']; ?></td>
+                <td><?php echo $row['date_out']; ?></td>
+                <!--Edit the selected data on the index page-->
+                <td><a class="edit_btn" href="index.php?edit=<?php echo $row['id']; ?>">Edit</a></td>
+                <!--Delete the selected data from the server and database-->
+                <td><a class="dlt_btn" href="server.php?dlt=<?php echo $row['id']; ?>">Delete</a></td>
+            </tr>
 
-           
+        <?php }?>
+            
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <!------------------------------------------------------------------>
            <button class="button is-link is-large" href="#">
                 Check availability
            </button>
