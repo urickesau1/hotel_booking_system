@@ -310,7 +310,7 @@
 
            
            <button class="button is-link is-large" href="#">
-                Book now
+                Check availability
            </button>
 
 
@@ -319,34 +319,37 @@
         <div class="column">
            
             <div id="reviewF">
-                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/tyrone.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                </p> <span id=jump> Tyrone Joubert</span> <img src="img/tyrone.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
                     The Four Seasons hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
                 
                 </p>
                 <br>
-                </p> <span id=jump> Four Seasons Hotel</span> <img src="img/taufeeq.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                <br>
+                </p> <span id=jump> Taufeeq Rajap</span> <img src="img/taufeeq.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
                     The Four Seasons hotel has the best vetkoeks. They even add extra mince for free!!!
                 
                 </p>
             </div>
             <div id="reviewT">
-                </p> <span id=jump> Royal Tulip Hotel</span> <img src="img/natheer.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                </p> <span id=jump> Natheer Kamish</span> <img src="img/natheer.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
                     The Royal Tulip hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
                 
                 </p>
                 <br>
-                </p> <span id=jump> Royal Tulip Hotel</span> <img src="img/reagan.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                <br>
+                </p> <span id=jump> Reagan Beck</span> <img src="img/reagan.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
                     The Royal Tulip hotel has the best vetkoeks. They even add extra mince for free!!!
                 
                 </p>
             </div>
             <div id="reviewS">
-                </p> <span id=jump> Sun1 Hotel Parow</span> <img src="img/marlon.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                </p> <span id=jump> Marlon Demas</span> <img src="img/marlon.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
                     The Sun1 hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
                 
                 </p>
                 <br>
-                </p> <span id=jump> Sun1 Hotel Parow</span> <img src="img/evan.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
+                <br>
+                </p> <span id=jump> Evan Christians</span> <img src="img/evan.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
                     The Sun1 hotel has the best vetkoeks. They even add extra mince for free!!!
                 
                 </p>
