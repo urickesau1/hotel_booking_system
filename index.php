@@ -321,13 +321,7 @@ if (isset($_GET['edit'])) {
 
 
                 <br>
-                <h2 class="subtitle is-3 has-text-black" id="quickdays">Check In</h2>
-                <input type="date" name="days" id="days">
-                <br>
-                <h2 class="subtitle is-3 has-text-black" id="quickdays">Check Out</h2>
-                <input type="date" name="days" id="days">
-                <br>
-                <h2 class="subtitle is-3 has-text-black" id="quickdays"> Your Total:</h2>
+                
                 <br>
                 <tr>
                     <td>
@@ -343,11 +337,11 @@ if (isset($_GET['edit'])) {
     <input type="hidden" name="id" value="<?php echo $id; ?>">
         
         <div class="input-group">
-            <label>Check-in Date</label>
+            <label class="subtitle is-3 has-text-black" id="quickdays">Check-in Date</label>
             <input type="date"name="date_in" value="<?php echo $date_in; ?>">
         </div>
         <div class="input-group">
-            <label>Check-out Date</label>
+            <label class="subtitle is-3 has-text-black" id="quickdays">Check-out Date</label>
             <input type="date"name="date_out" value="<?php echo $date_out; ?>">
         </div>
         <div class="input-group">
