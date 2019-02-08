@@ -369,10 +369,6 @@ if (isset($_GET['edit'])) {
             <tr>
                 <td><?php echo $row['date_in']; ?></td>
                 <td><?php echo $row['date_out']; ?></td>
-                <!--Edit the selected data on the index page-->
-                <td><a class="edit_btn" href="index.php?edit=<?php echo $row['id']; ?>">Edit</a></td>
-                <!--Delete the selected data from the server and database-->
-                <td><a class="dlt_btn" href="server.php?dlt=<?php echo $row['id']; ?>">Delete</a></td>
             </tr>
 
         <?php }?>
