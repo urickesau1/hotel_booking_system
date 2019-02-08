@@ -27,6 +27,7 @@ if (isset($_GET['edit'])) {
     <title>HOTEL BOOKING</title>
     <link rel="stylesheet" href="bulma/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alice|Bad+Script|Charm|Cinzel:700|Courgette|Dancing+Script:700|Kaushan+Script|Lobster|Merienda|Playfair+Display+SC:400i|Tangerine:700|Roboto+Condensed:400i|" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
     <script src="js/jquery.min.js"></script>
 
     <script>
