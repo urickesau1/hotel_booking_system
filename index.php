@@ -346,11 +346,7 @@ if (isset($_GET['edit'])) {
         </div>
         <div class="input-group">
             <!--Here I defined my buttons to respond according to whether a user wants to update or save a task-->
-            <?php if ($edit_state == false): ?>
-                <button type="submit" name="save" class="btn">Save</button>
-             <?php else:  ?>
-                <button type="submit" name="update" class="btn">Update</button>
-            <?php endif ?>
+            
         </div>
     </form>
         <br>
@@ -359,7 +355,7 @@ if (isset($_GET['edit'])) {
         <!------------------------------------------------------------------>
         
     <!--THIS IS THE TABLE WHICH DISPLAYS THE TASK INFORMATION ONCE IT HAS BEEN ENTERED AND SAVED-->
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>Check-in date</th>
