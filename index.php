@@ -360,7 +360,7 @@ if (isset($_GET['edit'])) {
             <tr>
                 <th>Check-in date</th>
                 <th>Check-out date</th>
-                <th colspan="2">Action</th>
+                <th colspan="2">Price</th>
             </tr>
         </thead>
         <tbody>
