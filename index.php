@@ -1,25 +1,3 @@
-<?php include('server.php'); 
-
-if (isset($_GET['check'])) {
-    $id = $_GET['check'];
-
-    $rec = mysqli_query($db, "SELECT * FROM date_info WHERE id=$id");
-    $edit_state = true;
-    $record = mysqli_fetch_array($rec);
-    $date_in = $record['date_in'];
-    $date_out = $record['date_out'];
-    $id = $record['id'];
-    $totaldays = $date_in->diff($date_out);
-
-}
-
-$totaldays = $date_in->diff($date_out);
-
-?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +9,7 @@ $totaldays = $date_in->diff($date_out);
     <link href="https://fonts.googleapis.com/css?family=Alice|Bad+Script|Charm|Cinzel:700|Courgette|Dancing+Script:700|Kaushan+Script|Lobster|Merienda|Playfair+Display+SC:400i|Tangerine:700|Roboto+Condensed:400i|" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="js/jquery.min.js"></script>
-
+    <!--I used jquery to target an id, when it is clicked it will fade in hidden content i coded as a ui effect-->
     <script>
        $("document").ready(function() {
             $("#hotel1").on("click", function(){
@@ -169,14 +147,22 @@ $totaldays = $date_in->diff($date_out);
             border-radius: 13px;
         }
 
+        #quickSearch a {
+            padding: 20px;
+        }
+
+        #output-image {
+            padding: 10px;
+        }
+
 
     
     
     </style>
 </head>
-<body>
-    
-        
+
+
+<body>   
         <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <img src="" width="112" height="28">
@@ -190,7 +176,7 @@ $totaldays = $date_in->diff($date_out);
               
                 <div id="navbarBasicExample" class="navbar-menu">
                   <div class="navbar-start">
-                    <a class="navbar-item">
+                    <a class="navbar-item" href=home.php>
                       Home
                     </a>
               
@@ -224,10 +210,10 @@ $totaldays = $date_in->diff($date_out);
                   <div class="navbar-end">
                     <div class="navbar-item">
                       <div class="buttons">
-                        <a class="button is-primary" href="form.php">
+                        <a class="button is-primary" href="userinfo.php">
                           <strong>Sign up</strong>
                         </a>
-                        <a class="button is-light">
+                        <a class="button is-light" href="login.php">
                           Log in
                         </a>
                       </div>
@@ -239,20 +225,12 @@ $totaldays = $date_in->diff($date_out);
     <section class="hero is-fullheight">
         <div class="hero-body">
             <div class="container">
-                    <h1 class="title is-1 has-text-grey-dark has-text-centered" id="hotel-name">URICK ESAU</h1>
-                    <h2 class="subtitle is-2 has-text-centered is-italic" id="slogan">Welcome Home</h2>
-                    <h1 class="title is-1 is-italic">
-                           <!-- HOTEL TRIVAGO-->
-                        </h1>
-                        <h2 class="subtitle is-size-3 has-text-grey-darker has-shadow has-text-left">
-                            “The key is to set realistic customer expectations and then not to just meet them, but to exceed them — preferably in unexpected and helpful ways.”
-                        </h2>
-                        <br>
-                        
-                        
-                
-                    <!-- <img src="img/bighero.jpeg" alt="" srcset="" style="max-width: 1000px"> -->
-                
+                <h1 class="title is-1 has-text-grey-dark has-text-centered" id="hotel-name">URICK ESAU's <br> LOOKIN4BOOKIN</h1>
+                <h2 class="subtitle is-2 has-text-centered is-italic" id="slogan">Welcome Home</h2>
+                <h2 class="subtitle is-size-3 has-text-grey-darker has-shadow has-text-left">
+                    “The key is to set realistic customer expectations and then not to just meet them, but to exceed them — preferably in unexpected and helpful ways.”
+                </h2>
+                <br>      
             </div>
         </div>
     </section>
@@ -274,32 +252,41 @@ $totaldays = $date_in->diff($date_out);
             <div>
             <figure class="image is-128x128 is-centered">
                 <img src="img/john-paul.jpg">
-            </figure>
+            </figure> <h2>John-Paul Lewis</h2> 
             <br>
             <p class="is-italic" id="review-text">
-                <div class="30">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia sed iure cumque debitis quos impedit ducimus magni quaerat at provident quas, commodi obcaecati accusamus illum dolorum, dolorem rem quae eos!</div>
+                <div class="30">"Fantastic design and very easy to use! It takes the complications out of having to sign up to different hotel websites and end up not choosing the one I signed up for." 
+                <br>
+                <br>
+               <h2>5 out of 5 stars ⭐⭐⭐⭐⭐ </h2> </div>
             </p>
             <br>
             <figure class="image is-128x128 is-centered">
-                <img src="img/gordi.jfif">
-            </figure>
+                <img src="img/gordi.jfif"> 
+            </figure> <h2>Gordi Fungula</h2>
             <br>
             <p class="is-italic" id="review-text">
-                <div class="30">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia sed iure cumque debitis quos impedit ducimus magni quaerat at provident quas, commodi obcaecati accusamus illum dolorum, dolorem rem quae eos!</div>
+                <div class="30">"The fact that they do all the work of comparing prices and only having to sign up once is a great feature for me. I can book at any hotel without having to register on a million sites, and this gives me great peace of mind. Booking a room is as simple as clicking a button!"
+                <br>
+                <br>
+                <h2>4 out of 5 stars ⭐⭐⭐⭐</h2></div>
             </p>
             <br>
             <figure class="image is-128x128 is-centered">
-                <img src="img/style8.jpg">
-            </figure>
+                <img src="img/style8.jpg"> 
+            </figure> <h2>Zaeema Jacobs</h2> 
             <br>
             <p class="is-italic" id="review-text">
-                <div class="30">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia sed iure cumque debitis quos impedit ducimus magni quaerat at provident quas, commodi obcaecati accusamus illum dolorum, dolorem rem quae eos!</div>
+                <div class="30">Highly recommended! After a long night out I can easily check if a room is available and book it immediately. By the time I reach the hotel, they already have all my details, which makes it so convenient.
+                <br>
+                <br>
+                <h2>4 out of 5 stars ⭐⭐⭐⭐</h2></div>
             </p>
             </div>
             
                 
         </div>
-        <div class="column has-background-grey-lighter">
+        <div class="column has-background-grey-lighter" id=quickSearch>
         <h2 class="title is-1 has-text-grey-dark" id="quick">QUICK SEARCH</h2>
            <br>
            <h2 class="subtitle is-3 has-text-black" id="quickselect">Select your hotel by<u>  clicking </u>the menu below: </h2>
@@ -313,6 +300,10 @@ $totaldays = $date_in->diff($date_out);
                 </select>
                 <br>
                 <br>
+                <a class="button is-primary" href="login.php"><strong>Login or register to check availibility</strong></a>
+        
+
+                
 
                 <div id="output-image">
                 </div>
@@ -334,122 +325,74 @@ $totaldays = $date_in->diff($date_out);
            </form>
            <br>
            <br>
-           <!------------------------------------------------------------------>
-           <form method="post" action="server.php" class="bookdates">
-    <input type="hidden" name="id" value="<?php echo $id; ?>">
+           <!----------------------------------------------------------------->
+           
+    
+        
         
         <div class="input-group">
-            <label class="subtitle is-3 has-text-black" id="quickdays">Check-in Date</label>
-            <input type="date"name="date_in" value="<?php echo $date_in; ?>">
-        </div>
-        <div class="input-group">
-            <label class="subtitle is-3 has-text-black" id="quickdays">Check-out Date</label>
-            <input type="date"name="date_out" value="<?php echo $date_out; ?>">
+            <!--This is where the user will recieve a message to state that an action has been performed or not. I used a div within an if statement to to contain the message and echoed a message which is stored on my server.php page -->
+    
+
+    <!--This is my Title/ Application name-->
+    
+
+
+    <!-- This is the form for users to enter their details. The data is saved to the server.php page-->
+    
+    
+    <br>
+    <!--USER FORM ENDS HERE-->
+ 
 
         </div>
         <div class="input-group">
             <!--Here I defined my buttons to respond according to whether a user wants to update or save a task-->
             
         </div>
-    </form>
+    
         <br>
         <br>
-        <!------------------------------------------------------------------>
-        <!------------------------------------------------------------------>
-
-
-        <!--Declaring my variables to calculate the price-->
-
        
-
-
-        <!------------------------------------------------------------------>
-        <!------------------------------------------------------------------>
-        
-    <!--THIS IS THE TABLE WHICH DISPLAYS THE TASK INFORMATION ONCE IT HAS BEEN ENTERED AND SAVED-->
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Check-in date</th>
-                <th>Check-out date</th>
-                <th>Days</th>
-                <th colspan="2">Price</th>
-            </tr>
-        </thead>
-        <tbody>
-        <!--THE DATA IS FETCHED AND DISPLAYED VIA THE FETCH ARRAY FUNCTION. I CALLED THE DATA FROM THEIR ASSIGNED FIELDS IN THE DATABASE TO THEIR CORRESPONDING POSITION IN THE USER TABLE-->
-        <?php while($row = mysqli_fetch_array($results)) { ?>
-            <tr>
-                <td><?php echo $row['date_in']; ?></td>
-                <td><?php echo $row['date_out']; ?></td>
-               <td><?php echo "difference " . $totaldays->days . " days "; ?></td> 
-            </tr>
-
-        <?php }?>
-            
-        </tbody>
-    </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           <!------------------------------------------------------------------>
-           <?php if ($edit_state == false): ?>
-           <button class="button is-link is-large" href="#" name="check">
-                Check availability
-           </button>
-           <?php else:  ?>
-                <button type="submit" name="update" class="btn">Update</button>
-            <?php endif ?>
-
-
             
         </div>
         <div class="column">
            
             <div id="reviewF">
                 </p> <span id=jump> Tyrone Joubert</span> <img src="img/tyrone.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
-                    The Four Seasons hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
+                    "Great hotel and amazing service! The breakfest is great and includes a variety of options.
+                    The sea view room is very nice and the shower is very cozy (colored lights in the shower). It was also nice to have control on the lights/curtains from the tablet.."
                 
                 </p>
                 <br>
                 <br>
                 </p> <span id=jump> Taufeeq Rajap</span> <img src="img/taufeeq.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
-                    The Four Seasons hotel has the best vetkoeks. They even add extra mince for free!!!
+                "The Four Seasons has long been a favourite or ours and each time we return we soon remember why. The welcome at the doors and the quick and friendly check in at the super efficient reception desk, where the brilliant Andreas and his excellent staff make sure you feel at home immediately, set the tone for a truly relaxing break."
                 
                 </p>
+                <br><br>
             </div>
             <div id="reviewT">
                 </p> <span id=jump> Natheer Kamish</span> <img src="img/natheer.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
-                    The Royal Tulip hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
+                    "Royal Tulip Beach Resort is a five star hotel with excellent service, good food, a clean beach and with a beautiful coral reef."
                 
                 </p>
                 <br>
                 <br>
                 </p> <span id=jump> Reagan Beck</span> <img src="img/reagan.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
-                    The Royal Tulip hotel has the best vetkoeks. They even add extra mince for free!!!
+                    "We arrived at the Royal Tulip beach resort and straight away we were treated like family returning. Staff are always very helpful and kind, they took us straight to our room in a new block over looking the beach. "
                 
                 </p>
             </div>
             <div id="reviewS">
                 </p> <span id=jump> Marlon Demas</span> <img src="img/marlon.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
-                    The Sun1 hotel has the best service in the industry. Nothing can compare to the way they make you feel at home.
+                    "In close proximity to Cape Town International Airport, SUN1 Parow offers convenient, modern and comfortable hotel accommodation at affordable rates."
                 
                 </p>
                 <br>
                 <br>
                 </p> <span id=jump> Evan Christians</span> <img src="img/evan.jpg" alt="" srcset="" class="image is-128x128 is-centered"> <br>
-                    The Sun1 hotel has the best vetkoeks. They even add extra mince for free!!!
+                    "As usual, everything was perfect. Fantastic welcome & great accommodation. As we always stay at Sun1 during Business trips throughout South Africa, we feel like part of the Sun1 family!Thank you to Conrad from Sun1 Parow and his team !"
                 
                 </p>
             </div>
@@ -472,13 +415,13 @@ $totaldays = $date_in->diff($date_out);
             image = '<span class="tag is-danger is-medium">Please select your hotel</span>';
             break;
             case "hotel1":
-            image = '<img src="img/four.jpg"></img> <br> <span class="tag is-danger is-medium">Daily rate (off season) R1200.00 per night</span>';
+            image = '<img src="img/four.jpg" class="image is-128x128"></img> <br> <span class="tag is-danger is-medium">Daily rate (off season) R1200.00 per night</span>';
             break;
             case "hotel2":
-            image = '<img src="img/Royal-Tulip.png"></img> <br> <span class="tag is-warning is-medium">Daily rate (off season) R950.00 per night</span>';
+            image = '<img src="img/Royal-Tulip.png" class="image is-128x128"></img> <br> <span class="tag is-warning is-medium">Daily rate (off season) R950.00 per night</span>';
             break;
             case "hotel3":
-            image = '<img src="img/sun1.jpg"></img> <br> <span class="tag is-primary is-large">Daily rate (off season) R550.00 per night</span>';
+            image = '<img src="img/sun1.jpg" class="image is-128x128"></img> <br> <span class="tag is-success is-large">Daily rate (off season) R550.00 per night</span>';
             break;
 
             default:
@@ -489,7 +432,7 @@ $totaldays = $date_in->diff($date_out);
         }
     </script>
 
-
+       
 
     
     

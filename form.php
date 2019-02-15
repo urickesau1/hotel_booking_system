@@ -2,7 +2,7 @@
 session_start();
 $_SESSION['message'] = '';
 
-$mysqli = new mysqli('localhost', 'root', 'MyNewPass', 'accounts');
+$mysqli = new mysqli('localhost', 'root', 'MyNewPass', 'testcrud6');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //Check whether the two passwords entered are identical
