@@ -14,7 +14,7 @@ session_start();
 				if(document.f1.elements[x].value=="")
 				{
 					f1.txtname.focus();
-					alert("Pls Enter All Value");
+					alert("Please Enter All Values");
 					i=1;
 					break;
 				}

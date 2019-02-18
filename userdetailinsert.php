@@ -10,8 +10,7 @@
 
 	$qiu=mysqli_query ($l,"INSERT INTO user
 	(Userid, password, username ,useremail , userphone, useraddress) VALUES
-	('$userid',
-	'$password','$username','$useremail','$userphone','$useraddress');");
+	('$userid','$password','$username','$useremail','$userphone','$useraddress');");
 
 	if(!$qiu)
 	{
