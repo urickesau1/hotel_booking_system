@@ -1,9 +1,6 @@
 # hotel_booking_system
-This is a simple hotel booking system I created in an attempt to combine PHP, MySQL, HTML and CSS for my Web Development project at LlifeChoices CodeSpace
 
-# Taskmanager
-
-This was my first attempt at combining MySQL and PHP to create a simple "To-do list" web project. <br>
+This was my first attempt at combining MySQL and PHP to create a simple "Hotel Booking System" web project. <br>
 You can access the webpage <a href="https://urickesau1.github.io/hotel_booking_system/" target="_blank">Here</a>
 
 ## Getting Started
