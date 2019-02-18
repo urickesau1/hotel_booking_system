@@ -2,7 +2,6 @@
 <head>
   <title>Login Page</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 
   <!--using javascript to style my alert messages--> 
@@ -28,6 +27,14 @@
   </script>
   <!--End of my alert message script-->
   </head>
+
+  <style>
+    form {
+      text-align: center;
+    }
+  
+  
+  </style>
 
 <body>
 

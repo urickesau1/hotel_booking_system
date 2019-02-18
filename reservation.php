@@ -28,8 +28,14 @@ session_start();
 			}
 		}
 	</script>
+	<style>
+		form th {
+			font-size: 1.5rem;
+		}
+	
+	</style>
 </head>
-<body bgcolor="#fff">
+<body bgcolor="#9999ff">
 <?php
 	include "connection.php";
 

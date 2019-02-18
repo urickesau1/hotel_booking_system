@@ -44,7 +44,7 @@ function RePasswordValidataion(sPassword,sRePassword)
 
 
 </style>
-<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 <p align="center">&nbsp;</p>
