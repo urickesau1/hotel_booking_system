@@ -55,7 +55,7 @@ session_start();
 	<th align=left>No Of Rooms   :</th>
 	<td><select name=txtroom>
 	<?php
-	for($i=1;$i<=20;$i++)
+	for($i=1;$i<=5;$i++)
 	{
 		echo "<option value=$i>$i</option>";
 	}

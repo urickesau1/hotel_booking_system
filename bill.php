@@ -21,6 +21,10 @@
     #summary {
       text-align: center;
     }
+
+    h1 {
+      text-decoration: underline;
+    }
   
   </style>
 </head>  
@@ -48,6 +52,7 @@
     <h2>Hotel : <?php echo $_SESSION['type']; ?> </h2>
     <h2>Cost per Room : <?php echo $_SESSION['price']; ?> </h2>
     <h2>Number of Rooms : <?php echo $_SESSION['norm']; ?> </h2>
+    <h2>Check In : <?php echo $_SESSION['cid']; ?> </h2>
     <h2>Number of Days : <?php echo $_SESSION['datediff']; ?> </h2>
     <br><br>
     <h2>Thank you for coming, <strong><?php echo $_SESSION['username']?></strong></h2>

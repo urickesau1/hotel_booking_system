@@ -9,7 +9,6 @@
 	 $cod=$_POST["cod"];
 	 $norm=$_POST["txtroom"];
 	 $type=$_POST["txttype"];
-	 $spreq=$_POST["txtspanyreq"];
 	include "connection.php";
 
 	$ddiff=floor(strtotime($cod)-strtotime($cid))/86400;
@@ -61,8 +60,8 @@
  	else
  	{
  	$qins=mysqli_query ($con,"INSERT INTO reservation
-	(r_id, r_chkindt , r_chkoutdt , r_rooms, r_type ,r_spanyreq)VALUES
-	('$id1','$cid','$cod','$norm','$type','$spreq');");
+	(r_id, r_chkindt , r_chkoutdt , r_rooms, r_type)VALUES
+	('$id1','$cid','$cod','$norm','$type');");
 
 		if($qins)
 		{
