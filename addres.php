@@ -14,14 +14,14 @@
 	$ddiff=floor(strtotime($cod)-strtotime($cid))/86400;
 	$_SESSION['datediff']=$ddiff;
 
-
+	//Validation for the user to input a CheckIn date which is not greater than the CheckOut date, an error will pop up to block them from doing so.
 	if($ddiff<0)
 	{
 		$message = "CheckIn Date cant be greater than Checkout Date :()";
 		echo "<script type='text/javascript'>alert('$message');</script>";
 		echo "<script>window.location='reservation.php';</script>";
 	}
-
+	// If they successfully choose the correct date input, the users details will be added and checked with the available hotels and dates already existing in the database.
 	else
 	{
 

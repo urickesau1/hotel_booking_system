@@ -235,7 +235,7 @@
         </div>
     </section>
 
-    <div class="columns has-background-grey-lighter">
+    <div class="columns has-background-grey-lighter" style="padding:1.75rem">
         <div class="column has-text-centered">
             <img src="img/doubleroom.jpeg" alt="" srcset="">
         </div>
